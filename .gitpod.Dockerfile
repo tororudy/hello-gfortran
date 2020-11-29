@@ -1,5 +1,3 @@
-FROM gitpod/workspace-full:latest
-
 USER gitpod
 
 # Install gfortran compiler
