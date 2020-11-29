@@ -3,5 +3,6 @@ FROM gitpod/workspace-full:latest
 USER gitpod
 
 # Install gfortran compiler
-RUN sudo apt-get update \
+RUN sudo add-apt-repository ppa:ubuntu-toolchain-r/test \
+    && sudo apt-get update \
     && sudo apt-get install gfortran-9
